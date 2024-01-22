@@ -1,9 +1,49 @@
+h1, h2, nav, p {margin: 0}
 body
 {
-  /* you better change this stuff */
-  margin: 300px;
-  font-family: papyrus;
-  color: red;
-  background-color: green;
-  font-size: 300%;
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(10, 10, 18);
+  background-color: rgb(34, 34, 60);
+}
+
+/* total 15 vh in min-height*/
+header {
+  padding: 1vh;
+  min-height: 13vh;
+  background-image: linear-gradient(rgba(0,0,0,0), rgb(45,45,90) 1vh, rgb(45,45,90) calc(100% - 1vh), rgba(0,0,0,0));
+  text-align: center;
+  
+}
+
+/* total 68 vh in min-height*/
+main {
+  margin: 0;
+  background-image: linear-gradient(rgba(0,0,0,0), rgb(45,45,90) 8px, rgb(45,45,90) calc(100% - 8px), rgba(0,0,0,0));
+  padding: 1vh;
+  min-height: 66vh;
+}
+
+/* Total 17 vh in min-height*/
+footer {
+  padding: 1vh;
+  min-height: 15vh;
+  background-image: linear-gradient(rgba(0,0,0,0), rgb(45,45,90) 1vh, rgb(45,45,90) calc(100% - 1vh), rgba(0,0,0,0));
+  
+}
+
+h2, h3, figcaption, figure {
+  text-align: center;
+}
+
+a {
+  color: rgb(10, 10, 18);
+}
+
+.bold {
+  font-weight: 900;
+}
+img {
+  width: 10px;
 }
