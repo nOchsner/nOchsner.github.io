@@ -25,6 +25,10 @@ main {
   min-height: 66vh;
 }
 
+#reset, #submit {
+  background-color: rgb(34, 34, 60);
+  color: aliceblue;
+}
 /* Total 17 vh in min-height*/
 footer {
   padding: 1vh;
