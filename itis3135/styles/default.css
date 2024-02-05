@@ -5,7 +5,7 @@ body
   margin: 0;
   padding: 0;
   font-family:'Times New Roman', Times, serif;
-  color: rgb(10, 10, 18);
+  color: rgb(160, 230, 255);
   background-color: rgb(34, 34, 60);
 }
 
@@ -34,7 +34,7 @@ footer {
   padding: 1vh;
   min-height: 15vh;
   background-image: linear-gradient(rgba(0,0,0,0), rgb(45,45,90) 1vh, rgb(45,45,90) calc(100% - 1vh), rgba(0,0,0,0));
-  
+  text-align: center;
 }
 
 h2, h3, figcaption, figure {
@@ -42,7 +42,7 @@ h2, h3, figcaption, figure {
 }
 
 a {
-  color: rgb(10, 10, 18);
+  color: rgb(120, 190, 130)
 }
 
 .bold {
@@ -65,4 +65,15 @@ td {
 
 .tables-tbody tr:nth-child(odd) {
   background-color: rgb(55,55,98);
+}
+input, textarea {
+  background-color: aliceblue;
+}
+
+table {
+  margin: auto;
+}
+
+.Italicize {
+  font-style: italic;
 }
