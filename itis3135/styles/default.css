@@ -40,6 +40,11 @@ main {
   min-height: 66vh;
 }
 
+.Intro {
+  width: 75vw;
+  margin: auto;
+}
+
 #reset, #submit {
   background-color: rgb(34, 34, 60);
   color: aliceblue;
@@ -56,6 +61,14 @@ footer {
     );
   text-align: center;;
   text-align: center;
+}
+
+.Forms-Form {
+  background: radial-gradient(rgb(17, 17, 30), transparent);
+  width: 60vw;
+  margin: auto;
+  padding: 5%;
+
 }
 
 h2, h3, figcaption, figure {
