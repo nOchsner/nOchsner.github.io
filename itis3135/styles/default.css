@@ -1,6 +1,8 @@
 :root {
   --background1: rgb(17, 17, 30);
   --background2: rgb(25,25,45);
+  --textColor1: rgb(160, 230, 255);
+  --linkColor: rgb(120, 190, 130);
 }
 
 * {margin: 0}
@@ -9,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family:'Times New Roman', Times, serif;
-  color: rgb(160, 230, 255);
+  color: var(--textColor1);
   background-color: var(--background1);
 }
 
@@ -64,7 +66,7 @@ footer {
 }
 
 .Forms-Form {
-  background: radial-gradient(rgb(17, 17, 30), transparent);
+  background: radial-gradient(rgb(17, 17, 30) 15%, transparent, rgb(17, 17, 30));
   width: 60vw;
   margin: auto;
   padding: 5%;
@@ -76,7 +78,7 @@ h2, h3, figcaption, figure {
 }
 
 a {
-  color: rgb(120, 190, 130)
+  color: var(--linkColor)
 }
 
 .bold {
@@ -134,4 +136,27 @@ table {
 
 .intro-list {
   text-align: start;
+}
+
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 200px) {
+  main {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
 }
