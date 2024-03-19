@@ -160,3 +160,18 @@ table {
     max-width: 400px;
   }
 }
+#project_info_part_list {
+  text-align: left;
+  padding: 1vh 10vw;
+}
+#project_info_part_list li {
+  padding-top: 1.5vh;
+}
+
+#project_info_part {
+  padding-top: 2vh;
+}
+
+.firstScripts-padding {
+  padding: 2vh 7.5vw;
+}

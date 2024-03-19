@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Ochsner's Nuanced Oyster | ITIS 3135 | Home</title>
+    <title>Nick Ochsner's Nuanced Oyster | ITIS 3135 | First Scripts</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -13,11 +13,70 @@
     </header>
     <main>
         <h2>
-            ITIS 3135 Home
+            ITIS 3135 || First Scripts
         </h2>
-        <p>
-            This is all the content for my ITIS 3135 class
-        </p>
+        <h3 id="firstScripts-time" class="firstScripts-padding">
+        </h3>
+
+        <input id="firstScripts-fName" placeholder="First Name">
+        <button type="button" onclick="firstName()">Submit</button>
+
+        <input id="firstScripts-lName" placeholder="Last Name">
+        <button type="button" onclick="lastName()">Submit</button>
+
+        <input id="firstScripts-mood" placeholder="Mood">
+        <button type="button" onclick="mood()">Submit</button>
+        <br><br>
+
+        <button type="button" onclick="greetMe()">Greet Me</button>
+        <br><br>
+        <p id="greeting"></p>
+        <br>
+
+        <p>Number To Polygon</p>
+        <input id="firstScripts-polygon" type="number" placeholder="Number 0-10">
+        <button type="button" onclick="toPolygon()">Find Polygon</button>
+        <br><br>
+        <p id="polyText"></p>
+        <br>
+
+        <h3>Company that sells uncomfortable and painful chairs.</h3>
+        <br>
+
+
+        <p>Random Choice of uncomfortable or painful chair</p>
+        <button type="button" onclick="function1()">Random Chair Type</button>
+        <br><br>
+        <p id="firstScripts-f1"></p>
+        <br>
+
+        <p>Painful Chair Costs, Enter number of chairs</p>
+        <input min="0" id="firstScripts-f2Input" type="number">
+        <button type="button" onclick="function2()">Find Chair Cost</button>
+        <br><br>
+        <p id="firstScripts-f2"></p>
+        <br>
+
+        <p>Uncomfortable Chair Costs, Enter number of chairs</p>
+        <input id="firstScripts-f3Input" type="number">
+        <button type="button" onclick="function3()">Find Chair Cost</button>
+        <br><br>
+        <p id="firstScripts-f3"></p>
+        <br>
+
+        <p>Fun Fact</p>
+        <button type="button" onclick="function4()">Get Fun Fact</button>
+        <br><br>
+        <p id="firstScripts-f4"></p>
+        <br>
+
+        <p>Should your chair be comfortable?</p>
+        <button type="button" onclick="function5()">Get Answer</button>
+        <br><br>
+        <p id="firstScripts-f5"></p>
+        <br>
+
+        <script src="scripts/defaultscripts.js"></script>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
