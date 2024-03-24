@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Games</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            :root {
+                --background: rgb(179, 213, 247);
+                --text1: rgb(48, 58, 134);
+                --text2: rgb(37, 45, 103);
+                --text3: rgb(24, 130, 41);
+                --dividers: rgb(100, 120, 170);
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                font-family:'Gill Sans', sans-serif;
+            }
+            body {
+                background-color: var(--background);
+                font-size: 22.5px;
+            }
+            header {
+                color: var(--text1);
+                padding: 1vh;
+                min-height: 13vh;
+                text-align: center;
+                border-bottom: solid 3px var(--dividers);
+            }
+            main{
+                color: var(--text2);
+                padding: 1vh;
+                min-height: 66vh;
+            }
+            footer {
+                color: var(--text1);
+                padding: 1vh;
+                border-top: solid 3px var(--dividers);
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                font-style: oblique;
+                color: var(--text3)
+            }
+            nav {
+                padding-top: 2vh;
+            }
+            h1 {
+                padding-top: 2vh;
+            }
+            #designed-by {
+                padding-top: 2vh;
+            }
+            #verification {
+                padding-top: 1.5vh;
+            }
+            .non-vis {
+                display: none;
+            }
+            .vis {
+                padding: 1.5vh 10vw;
+            }
+            .vis h2 {
+                text-align: center;
+            }
+            .vis p {
+                padding-top: 1.5vh;
+            }
+            figure {
+                padding-top: 2vh;
+                text-align: center;
+            }
+            figure img {
+                width: 30vw;
+            }
+            figcaption {
+                font-size: 18px;
+            }
+            .fig-para {
+                font-style: italic;
+            }
+            form {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Video Games
+            </h1>
+            <nav>
+                <a onclick="swapPage(0)" href="#home">Home</a>
+                💻
+                <a onclick="swapPage(1)" href="#about">About Me</a>
+                💻
+                <a onclick="swapPage(2)" href="#where">Where</a>
+                💻
+                <a onclick="swapPage(3)" href="#how">How</a>
+                💻
+                <a onclick="swapPage(4)" href="#why">Why</a>
+                💻
+                <a onclick="swapPage(5)" href="#when">When</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="vis">
+
+                <h2>
+                    Home
+                </h2>
+                <p>
+                    What are video games? Who invented them? These are just
+                    some questions I do not know the answer to. On a more 
+                    important note, I enjoy playing video games as a hobby.
+                    What games do I enjoy playing? Recently I've been
+                    replaying a game called Elden Ring. While it is
+                    definitely not my favorite game I've ever played, it is
+                    still a game that I've gotten a lot of joy out of
+                    playing.
+                </p>
+
+                <figure>
+                    <img src="./images/gameConsole.jpg">
+                    <figcaption>
+                        This is a nintendo switch
+                    </figcaption>
+                </figure>
+                <p class="fig-para">
+                    The prompt I used to get this image was "nintendo 
+                    switch realistic style". 
+                </p>
+
+                <p>
+                    This is a game console. There are many different kinds of
+                    game consoles and people use a myriad of different consoles.
+                    A lot of people also use PC's to play video games. Some video
+                    games are specific to specific consoles. There are so many
+                    interesting things about video games.
+                </p>
+            </section>
+            <section id="about" class="non-vis">
+
+                <h2>About Me</h2>
+                <p>
+                    As briefly metioned in the Home section, I've recently
+                    been playing a game called Elden Ring. A fun fact is that
+                    the game is actually based on a true story, do not fact
+                    check this statement. What I find most appealing about this
+                    game is its difficulty. It is one of the most difficult games
+                    I've ever played and I find it fun playing it. Another fun
+                    fact is that this game is nearly 20 years old, do not fact 
+                    check this statement either. I find video games fun and there 
+                    are many reasons that I'd find a game fun.
+                </p>
+                <figure>
+                    <img src="./images/eldenRing.jpg">
+                    <figcaption>
+                        This is picture is an AI generated image of Elden Ring
+                    </figcaption>
+                </figure>
+                <p class="fig-para">
+                    The prompt I used to get this image was "elden ring realistic style". 
+                </p>
+                <br>
+                <form>
+                    <h4>
+                        Fill Out This Cool Game Survey.
+                    </h4>
+
+                    <label for="favgame">Favorite Game: </label>
+                    <input placeholder="Favorite Game" id="favgame">
+                    <br>
+
+                    <label for="console">Favorite Console: </label>
+                    <select id="console" name="console">
+                    <option value="Ninendo Switch">Nindendo Switch</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Playstation">Playstation</option>
+                    </select>
+                    <br>
+                    <label for="ssn">Social Security Num: </label>
+                    <input placeholder="Social Security Num" id="ssn">
+                    <br>
+                    <input type="submit" value="Submit">
+                    
+                </form>
+            </section>
+            <section id="where" class="non-vis">
+                <h2>
+                    Where Can You Play Video Games
+                </h2>
+
+                <p>
+                    That's right, I'll be answering the question that everyone has
+                    been asking. Where can you play video games? This may surprise
+                    you but you can actually play video games anywhere. Are you at
+                    a funeral and need cheering up? Well set up you gaming console 
+                    near by and you and mourn the death of someone while getting
+                    that win in fortnite. Are you in a hospital? Well unplug some 
+                    of that useless life-saving machines and set up you gaming 
+                    console to play minecraft. The possibilities are endless. Play
+                    video games anywhere, nobody is going to stop you.
+                </p>
+
+                <figure>
+                    <img src="./images/gamesAtFuneral.jpg">
+                    <figcaption>
+                        Playing Video Games at Funeral
+                    </figcaption>
+                </figure>
+                <p class="fig-para">
+                    The prompt I used to get this image was "playing video 
+                    games funeral realistic style". 
+                </p>
+
+                <p>
+                    Because people like having access to play video games anywhere 
+                    there have been developments letting people have a more mobile
+                    gaming experience. To examples of this are the Nintendo Switch 
+                    and the Steam Deck. Both of these systems are well made and 
+                    customers who purchase these products have been known to enjoy 
+                    them. Truely there is no place you cannot play a video game.
+                </p>
+
+            </section>
+            <section id="how" class="non-vis">
+
+                <h2>
+                    How To Play Video Games
+                </h2>
+
+                <p>
+                    Video games are fun to play but setting up your system to have
+                    quick and easy access to the games you like is important. The 
+                    first thing you need to play video games is a system to play
+                    on. You could choose a gaming console like an Xbox or Nintendo 
+                    Switch. You can also just play games on your home PC if you'd
+                    prefer. If all else fails and you have a mobile phone, there 
+                    may be a game app you can download.
+                </p>
+
+                <figure>
+                    <img src="./images/confusion.jpg">
+                    <figcaption>
+                        How to play video games?
+                    </figcaption>
+                </figure>
+                <p class="fig-para">
+                    The prompt I used to get this image was "question 
+                    marks overlaying game console showing confusion 
+                    realistic style". 
+                </p>
+
+                <p>
+                    Once you have chosen your system it is now time to pick the 
+                    game you'd like to play. There are a myriad of options available
+                    which allows for basically endless gameplay. Once you have chosen 
+                    you game all you need to do is purchase and/or download it. You now
+                    have a video game that you can play anywhere. That was easy.
+                </p>
+
+            </section>
+            <section id="why" class="non-vis">
+                <h2>
+                    Why Video Games?
+                </h2>
+
+                <p>
+                    Why should you choose video games over any other
+                    type of game. There are board games, card games, 
+                    etc; and they can be very different. Why video games
+                    are so liked is the ease of access and easy customization.
+                    For example, you could play a card game in real life but 
+                    you'd need a deck of cards, you'd need to shuffle it, etc;
+                    but the ability to customize and add automated features to
+                    video games is a large benefit.
+                </p>
+
+                <figure>
+                    <img src="./images/whyvideogames.jpg">
+                    <figcaption>
+                        Why do people enjoy video games?
+                    </figcaption>
+                </figure>
+                <p class="fig-para">
+                    The prompt I used to get this image was "question 
+                    marks overlaying game console showing confusion 
+                    realistic style". 
+                </p>
+
+                <p>
+                    There are also more benefits to video games. Many genres
+                    of games can be only created in video games. This is why 
+                    people choose video games. The ability to basically create 
+                    any game you can imagine due to the power of computers is 
+                    what drove the way for video games to become as popular as
+                    they have. This fact is why I choose to play video games 
+                    and I hope this has helped give insight on why.
+                </p>
+
+            </section>
+            <section id="when" class="non-vis">
+                <!--
+                    when (this name is a guide - you can change use it or change it to something like "Best Times" or "Schedule" or 
+                    "Seasons" or something time related.
+                -->
+                <h2>
+                    When Can You Play Video Games?
+                </h2>
+
+                <p>
+                    Similar to "Where can you play video games?" this question 
+                    also deals with the specific situation in which you can 
+                    play video games. Starting with the answer: You can play video
+                    games at any time of the day or night. This is a fact and we 
+                    will also explore specific situations in which you can play 
+                    video games.
+                </p>
+
+                <figure>
+                    <img src="./images/whenvideogame.jpg">
+                    <figcaption>
+                        When can you play video games?
+                    </figcaption>
+                </figure>
+                <p class="fig-para">
+                    The prompt I used to get this image was "clocks 
+                    overlaying game console showing time realistic 
+                    style". 
+                </p>
+
+                <p>
+                    Is it 3am on a school night? That may be true but all I 
+                    hear is that it is the perfect time to start playing 
+                    video games. You may not get any sleep but you got to 
+                    play video games so thats a win. This is just one example 
+                    of a time when it may not seem obvious to play video games.
+                </p>
+
+            </section>
+        </main>
+        <footer>
+            <div id="designed-by">
+                Designed By: <a href="../ochsnerdesigns.com/">Ochsner Designs</a>
+            </div>
+            <div id="verification">
+                <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks">
+                <img src="./images/button_validation_wcag.png">
+                </a>
+            </div>
+        </footer>
+        <script>
+            const home = document.getElementById("home");
+            const about = document.getElementById("about");
+            const where = document.getElementById("where");
+            const how = document.getElementById("how");
+            const why = document.getElementById("why");
+            const when = document.getElementById("when");
+            const pageList = [home, about, where, how, why, when];
+
+
+
+            function setInv() {
+                pageList.forEach((page) => {
+                    page.className = "non-vis"
+                })
+            }
+            function swapPage(num) {
+                setInv();
+                pageList[num].className = "vis"
+            }
+        </script>
+    </body>
+</html>
+
+<!--        
+ONCE you've completed creating all of your sections 
+Lastly
+
+    Add this to the secondary menu on your main site as "Hobby", that way, we can access this website when visiting your main site.
+
