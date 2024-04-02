@@ -84,7 +84,7 @@ a {
 .bold {
   font-weight: 900;
 }
-img {
+#snr_photo {
   width: 10px;
 }
 table, td {
@@ -160,18 +160,53 @@ table {
     max-width: 400px;
   }
 }
-#project_info_part_list {
+.project_info_part_list {
   text-align: left;
-  padding: 1vh 10vw;
+  padding: 0vh 8.5vw;
 }
-#project_info_part_list li {
-  padding-top: 1.5vh;
+.project_info_part_list li {
+  padding-bottom: 1.5vh;
 }
 
-#project_info_part {
-  padding-top: 2vh;
+.project_info_part {
+  padding-top: 4vh;
+  padding-left: 11vw;
+  padding-right: 10vw;
 }
 
 .firstScripts-padding {
   padding: 2vh 7.5vw;
+}
+#wireframe {
+  width: 65vw;
+  padding-bottom: 1vh;
+}
+#wireframe-figure {
+  padding-top: 1vh;
+  padding-bottom: 1vh
+}
+#wireframe-para {
+  text-align: left;
+}
+
+#sitemap-img {
+  max-width: 100%
+}
+
+#sitemap-figure {
+  padding: 1.5vh 0;
+}
+
+.project-overview-para {
+  text-align: left;
+  padding: .5vh 0;
+}
+
+.page-item {
+  padding: 1vh 0;
+}
+
+.page-item p {
+  text-align: left;
+  padding: .5vh 0;
 }
