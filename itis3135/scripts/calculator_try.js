@@ -84,7 +84,6 @@ function updateOutputArea() {
         area1.innerText = numbers[0];
         area2.innerText = numbers[1];
     }
-    console.log(numbers[0] + "    " + numbers[1]);
 }
 
 function inverseNum() {
@@ -97,6 +96,9 @@ function inverseNum() {
 }
 
 function decimalCalc() {
+    if (numbers[stage].includes(".")) {
+        return;
+    }
     numbers[stage] += ".";
     updateOutputArea();
 }
