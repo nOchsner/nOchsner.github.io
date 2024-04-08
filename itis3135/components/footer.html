@@ -30,8 +30,8 @@
 <p>
     Designed By: <a href="./ochsnerdesigns.com/">Ochsner Designs,</a> <a href="https://www.freecodecamp.org/certification/nochsner/responsive-web-design">Certified in RWD.</a>
 </p>
-<button onclick="document.getElementsByTagName('link')[0].remove();">
-    Remove CSS
+<button type = "button" onclick = 	"document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">
+    No CSS
 </button>
 <br>
 <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
