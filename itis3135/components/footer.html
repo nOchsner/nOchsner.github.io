@@ -31,6 +31,10 @@
     Designed By: <a href="./ochsnerdesigns.com/">Ochsner Designs,</a> <a href="https://www.freecodecamp.org/certification/nochsner/responsive-web-design">Certified in RWD.</a>
 </p>
 <br>
+<button onclick="document.getElementsByTagName('link')[0].remove();">
+    Remove CSS
+</button>
+<br>
 <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
     <img style="border:0;width:88px;height:31px" 
     src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" 
@@ -41,7 +45,6 @@
     src="https://jigsaw.w3.org/css-validator/images/vcss" 
     alt="Valid CSS!">
 </a>
-
 <script>
     document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
     document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);

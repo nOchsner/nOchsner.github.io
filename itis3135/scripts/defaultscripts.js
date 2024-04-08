@@ -116,3 +116,5 @@ function function5()
     let options = ["yes", "no", "absolutly not", "chairs should hurt", "meh"];
     document.getElementById("firstScripts-f5").innerHTML = options[Math.floor(Math.random() * options.length)];
 }
+
+
