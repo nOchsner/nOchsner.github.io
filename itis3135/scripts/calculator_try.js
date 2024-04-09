@@ -104,6 +104,9 @@ function decimalCalc() {
 }
 
 function decrementCalc() {
+    if (numbers[stage] == "") {
+        return;
+    }
     numbers[stage] = (parseFloat(numbers[stage]) - 1).toString();
     updateOutputArea();
 }
