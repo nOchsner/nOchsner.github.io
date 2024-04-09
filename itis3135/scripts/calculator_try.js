@@ -103,7 +103,54 @@ function decimalCalc() {
     updateOutputArea();
 }
 
-function percentCalc() {
-    numbers[stage] = (parseFloat(numbers[stage]) / 100).toString();
+function decrementCalc() {
+    numbers[stage] = (parseFloat(numbers[stage]) - 1).toString();
     updateOutputArea();
 }
+
+/* Moving JavaScript from html to here */
+// Gather buttons;
+const decimalBtn = document.getElementById("calc-decimal");
+decimalBtn.addEventListener("click", decimalCalc)
+
+
+const invertBtn = document.getElementById("calc-invert");
+const decrementBtn = document.getElementById("calc-decrement");
+
+invertBtn.addEventListener("click", inverseNum);
+decrementBtn.addEventListener("click", decrementCalc);
+
+
+const plusBtn = document.getElementById("calc-plus");
+const minusBtn = document.getElementById("calc-minus");
+const multiplyBtn = document.getElementById("calc-multiply");
+const divideBtn = document.getElementById("calc-divide");
+
+plusBtn.addEventListener("click", () => {
+    operatorChange(0);
+});
+minusBtn.addEventListener("click", () => {
+    operatorChange(1);
+});
+multiplyBtn.addEventListener("click", () => {
+    operatorChange(2);
+});
+divideBtn.addEventListener("click", () => {
+    operatorChange(3);
+});
+
+
+const clearBtn = document.getElementById("calc-clear");
+const equalBtn = document.getElementById("calc-equal");
+
+clearBtn.addEventListener("click", clearCalc);
+equalBtn.addEventListener("click", calculate);
+
+
+for (let i = 0; i < 10; i++) {
+    let eventAdder = document.getElementById(`calc-${i}`);
+    eventAdder.addEventListener("click", () => {
+        number(i);
+    })
+}
+
