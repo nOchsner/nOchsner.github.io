@@ -281,3 +281,14 @@ table {
 .calc-button:hover {
   background-color: rgb(150, 220, 245);
 }
+
+
+
+.array-group > * {
+  margin-bottom: 1vh;
+}
+
+#results_table {
+  display: none;
+  min-width: 40vw;
+}

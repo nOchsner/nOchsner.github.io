@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Ochsner's Nuanced Oyster | ITIS 3135 | Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </header>
+    <main>
+        <h2>
+            ITIS 3135 Arrays
+        </h2>
+        <br>
+
+        <div class="array-group">
+            <div>
+                <label>Name: </label>
+                <input id="array-addsalary-name">
+            </div>
+            <div>
+                <label>Salary: </label>
+                <input id="array-addsalary-salary">
+            </div>
+            <button id="array-addsalary">
+                Add Salary
+            </button>
+        </div>
+        <br>
+
+        <div class="array-group">
+            <div>
+                <select id="array-modifysalary-dropdown">
+                    <option value="-1">Choose A Person</option>
+                </select>
+                <input id="array-modifysalary-salary">
+            </div>
+            <button id="array-modifysalary">
+                Modify Salary
+            </button>
+        </div>
+        <br>
+
+        <div class="array-group">
+            <button id="array-displayresult">
+                Display Results
+            </button>
+            <div id="results">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="array-group">
+            <button id="array-displaysalary">
+                Display Salary
+            </button>
+            <table id="results_table">
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </footer>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>
+
+<!--
+Part 1: Make the following modifications 
+    Write a displayResults function(). It should derive the average 
+    salary and the highest from the array and then display the 
+    results in the div element with “results” as its id. To display 
+    the results, you need to add nodes to the DOM with the heading 
+    as an h2 element and the average and highest as <p> elements. 
+    The easiest way to do that is to use the innerHTML property as 
+    shown in figure 6-13 in your Murach’s book.
+    
+    Write the displaySalary() It should get the names and values 
+    from the arrays and display them as rows in the HTML table 
+    element with “results_table” as its id - this should look 
+    something like your original table (of the two- in the tables 
+    exercise - the simpler one).
+
+    Make application move the cursor to the name field when the 
+    application starts and after a name and salary have been added, 
+    or when the the user clicks the add button.  
+    
+    Verify there are no errors. Test test test. Did I say test? I 
+    good application will be difficult to break. 
+    
+    Submit in the usual fashion with a URL to activity, and your 
+    signed note. Call it arrays in your menu, arrays.html in your 
+    files. 
+-->
