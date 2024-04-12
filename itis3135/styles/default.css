@@ -292,3 +292,22 @@ table {
   display: none;
   min-width: 40vw;
 }
+
+.array-button {
+  background-color: var(--background1);
+  border: none;
+  color: var(--textColor1);
+  padding: 1vh 3vw;
+}
+
+.array-input {
+  background-color: var(--background1);
+  border: 1px solid var(--textColor1);
+  color: var(--textColor1);
+}
+
+.array-select {
+  background-color: var(--background1);
+  border: 1px solid var(--textColor1);
+  color: var(--textColor1);
+}
