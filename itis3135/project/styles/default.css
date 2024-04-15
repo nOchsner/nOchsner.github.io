@@ -103,7 +103,9 @@ main > p {
 .section-area {
     width: 98%;
 }
-
+.small-text {
+    text-align: center;
+}
 
 
 /* Footer Specifications */
@@ -162,19 +164,22 @@ a {
 
 
 .secondary-nav {
-    min-width: 30%;
+    min-width: 95%;
     max-width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 .secondary-nav > * {
     padding: .5vh 4vw;
-    flex-basis: 100%;
+    flex-basis: calc(100%/3);
 }
 
 #jsIcon {
     width: 250px;
     margin: -15px 0 -35px 0;
+}
+
+.material-section:hover {
+    cursor: pointer;
 }

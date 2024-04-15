@@ -23,18 +23,19 @@ function load_page(name, callback) {
     // Send the request
     xhr.send();
 }
-
-const sections = document.getElementsByClassName("learing-section");
-const pageArea = document.getElementById("learning-content-area");
-for (let i = 0; i < sections.length; i++) {
-    let path = `./learning/section_${i+1}.html`
-    console.log(path)
-    load_page(path, (page)=> {
-        sections[i].addEventListener("click", () => {
-            pageArea.innerHTML = page;
-        })
-    });
+function createSections(pageName) {
+    const sections = document.getElementsByClassName(`material-section`);
+    const pageArea = document.getElementById(`${pageName}-content-area`);
+    for (let i = 0; i < sections.length; i++) {
+        let path = `./${pageName}/section_${i+1}.html`
+        load_page(path, (page)=> {
+            sections[i].addEventListener("click", () => {
+                pageArea.innerHTML = page;
+            })
+        });
+    }
 }
+
 
 /*
 load_page("./learning/section_1.html", (page)=> {
