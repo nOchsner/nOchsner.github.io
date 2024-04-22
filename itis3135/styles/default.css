@@ -311,3 +311,18 @@ table {
   border: 1px solid var(--textColor1);
   color: var(--textColor1);
 }
+
+
+
+.review-img {
+  width: 60vw;
+}
+
+.review-list {
+  text-align: start;
+  padding: 1.5vh 15vw;
+}
+
+.review-list * {
+  padding-bottom: 1vh;
+}
