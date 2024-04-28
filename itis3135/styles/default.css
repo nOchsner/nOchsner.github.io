@@ -312,6 +312,10 @@ table {
   color: var(--textColor1);
 }
 
+#about-paragraph {
+  text-align: left;
+  padding: 0 min(80px, 8vw)
+}
 
 
 .review-img {
