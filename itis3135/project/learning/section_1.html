@@ -1,9 +1,10 @@
 <div>
     <link rel="stylesheet" href="styles/learning_section.css">
-    <h3>
-        Welcome to Javascript
+    <br>
+    <h3 class="learning-section">
+        Variables and Operators
     </h3>
-    <p>
+    <p class="learning-section">
         JavaScript is a versatile programming language 
         primarily used for web development. It allows 
         developers to create interactive elements, dynamic 
@@ -17,21 +18,93 @@
         web-based software.
     </p>
     <br>
-    <h3>
+    <div class="divider-line"></div>
+    <br>
+    <h3 class="learning-section">
         Variables
     </h3>
-    <p>
+    <p class="learning-section">
         There are two main methods for create a varible in 
         Javascript. You can use either "let" for general 
         varibles while the use of the word "const" is used
         for values that stay the same.
     </p>
-    <button id="aaa">
-        hdhchdf
-    </button>
+    <br class="learning-section">
+    <div id="section1-variable-examples-button" class="learning-section">
+        <div id="section1-variable-let-examples" class="learning-section">
+            <span class="goldText">Using "let"</span>
+        </div>
+        <div id="section1-variable-const-examples" class="learning-section">
+            <span class="goldText">Using "const"</span>
+        </div>
+    </div>
+    <div id="section1-variable-examples" class="learning-section">
+        <p id="section1-variable-let-text" class="learning-section">
+            Declaring varible with "let": <br><br>
+            let variable1;<br>
+            <br><br>
+            Declaring and intializing a variable using "let":<br><br>
+            let variable2 = 5;
+        </p>
+        <p id="section1-variable-const-text" class="learning-section">
+            Declaring and intializing a variable using "const":<br><br>
+            const variable1 = "Hello, this is a string";<br><br>
+            When using "const" you must intialize the varible when declaring it.
+        </p>
+    </div>
+    <p class="learning-section">
+        In JavaScript, variables can embody a diverse range of data types, 
+        each serving unique purposes. Strings encapsulate sequences of 
+        characters, from plain text to complex phrases. Floats and integers 
+        represent numerical values, with floats accommodating decimals and 
+        integers handling whole numbers. Objects serve as containers for 
+        key-value pairs, enabling structured data organization and 
+        manipulation. Booleans, true or false values, underpin logical 
+        operations and decision-making processes. Additionally, JavaScript 
+        boasts dynamic typing, allowing variables to seamlessly transition 
+        between types as needed, enhancing flexibility and versatility in 
+        programming endeavors.
+    </p>
+    <br class="learning-section">
+    <div class="divider-line"></div>
+    <br class="learning-section">
+    <h3 class="learning-section">
+        Operators
+    </h3>
+    <p class="learning-section">
+        In JavaScript, operators are the building blocks of 
+        expressions, enabling various computations and 
+        manipulations within code. Arithmetic operators such 
+        as addition (+), subtraction (-), multiplication (*), 
+        and division (/) facilitate basic mathematical operations. 
+        Logical operators like AND (&&), OR (||), and NOT (!) 
+        enable logical comparisons and conditional branching. 
+        Comparison operators such as equal to (==), not equal 
+        to (!=), greater than (>), and less than (<) evaluate 
+        values and return true or false based on their 
+        relationships. Assignment operators like equals (=) 
+        assign values to variables, while compound assignment 
+        operators like += and -= combine arithmetic operations 
+        with assignment in a single step. Additionally, JavaScript 
+        supports unary operators for incrementing (++), decrementing 
+        (--), and negating (-) values. Collectively, these operators 
+        empower developers to craft sophisticated algorithms and control 
+        flow in their JavaScript applications.
+    </p>
+    <p style="text-align: center;" class="learning-section">
+        Try Using Some Operators:
+    </p>
+    <br class="learning-section">
+    <p style="text-align: center;" class="learning-section">
+        Please Only Use Numbers.
+    </p>
+    <br class="learning-section">
+    <div id="operating-try" class="learning-section">
+        <input placeholder="Operand 1" class="operand">
+        <input placeholder="Operator" id="operator">
+        <input placeholder="Operand 2 (Optional)" class="operand">
+        <div id="operating-equals">=</div>
+        <div id="operator-result"></div>
+    </div>
+
 </div>
-<!--
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="scripts/learning_section.js">
-    </script>
--->

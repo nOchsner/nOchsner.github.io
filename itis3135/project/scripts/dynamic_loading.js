@@ -31,25 +31,10 @@ function createSections(pageName) {
         load_page(path, (page)=> {
             sections[i].addEventListener("click", () => {
                 pageArea.innerHTML = page;
-                setSection1();
+                setSection(i+1);
             })
         });
     }
 }
 
-/*
-fetch('after.js')
-        .then(response => response.text())
-        .then(scriptText => {
-            eval(scriptText);
-        })
-        .catch(error => {
-            console.error('Error loading script:', error);
-        });
-*/
-/*
-load_page("./learning/section_1.html", (page)=> {
-    console.log(page);
-});
-*/
 
